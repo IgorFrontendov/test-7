@@ -1,0 +1,906 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --special-color: #FBD784;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.content {
+  width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-container .backgrounds {
+  background-image: url('images/hero-bg.avif');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1200px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-container .main-content {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.main-container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Gilroy-Light';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.76px;
+  text-align: left;
+  width: 100%;
+  padding: 64px 80px 0 80px;
+  color: #fff;
+}
+
+.main-container header .logo {
+  font-family: 'Chronicle Display';
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.main-container header .menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.background-mountains {
+  background-image: url('images/275a251d0966ae77b7e58d007b190a88.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1422px;
+  width: 100%;
+  position: absolute;
+  top: 464px;
+  z-index: 2;
+}
+
+.background-hill {
+  background-image: url('images/hero-bg-2.avif');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 1132px;
+  width: 100%;
+  top: 768px;
+  z-index: 3;
+}
+
+.main-container header .menu li {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.main-container header .account {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-container header .account .avatar {
+  margin-right: 8px;
+}
+
+.main-container .center-content {
+  padding-top: 155px;
+  display: flex;
+}
+
+.main-container .center-content  .social-networks {
+  padding-top: 20px;
+  margin-top: 144px;
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+.main-container .center-content  .social-networks .text {
+  margin-right: 24px;
+  font-size: 18px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+  padding: 0;
+}
+
+.main-container .center-content .social-networks .icon {
+  transform: rotate(270deg);
+  margin-right: 24px;
+}
+
+.main-container .center-content .right-content {
+  padding-left: 320px;
+}
+
+.main-container .title::before {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 2px;
+  background-color: var(--special-color);
+  left: 0;
+  top: 10px;
+}
+
+.main-container .title {
+  margin: 0;
+  position: relative;
+  padding-left: 104px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--special-color);
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 2px;
+  background-color: var(--special-color);
+  left: 0;
+  top: 10px;
+}
+
+.title {
+  margin: 0;
+  position: relative;
+  padding-left: 104px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--special-color);
+}
+
+.title2 {
+  font-family: 'Chronicle Display';
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 76.8px;
+  text-align: left;
+  color: #fff;
+}
+
+.main-container .title2 {
+  font-family: 'Chronicle Display';
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 100px;
+  text-align: left;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.main-container .scroll {
+  font-size: 18px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.main-container .scroll .text {
+  margin-right: 20px;
+  padding: 0;
+}
+
+.slider-list {
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  list-style: none;
+  position: fixed;
+  top: 326px;
+  right: 80px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  z-index: 33;
+}
+
+.slider-list .start {
+  text-align: left;
+  cursor: pointer;
+}
+
+
+.slider-list .page {
+  padding: 20px 32px 20px 0px;
+  border-right: 3px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  transition: border-color 0.4s ease-in-out;
+}
+
+.start.page.page-active {
+  border-color: #fff;
+  transition: border-color 0.4s ease-in-out;
+}
+
+.page.page-active {
+  border-color: #fff;
+  transition: border-color 0.4s ease-in-out;
+}
+
+.slider-list .page .number-page {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container-level-of-hiker {
+  padding-top: 200px;
+  padding-left: 280px;
+  background-color: #0B1D26;
+  width: 100%;
+}
+
+.container-level-of-hiker .content {
+  display: flex;
+  width: 1462px;
+  z-index: 1;
+}
+
+.text {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-top: 27px;
+  color: #fff;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.read-more .text {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--special-color);
+  margin-right: 16px;
+  padding: 0;
+}
+
+.container-level-of-hiker .left-content {
+  margin-top: 124px;
+}
+
+.container-level-of-hiker .right-content {
+  margin-left: 114px;
+}
+
+.container-level-of-hiker .background-number {
+  position: absolute;
+  top: 15px;
+  left: -152px;
+}
+
+.background-number {
+  font-family: "Gilroy-Bold";
+  font-size: 240px;
+  font-weight: 700;
+  line-height: 240px;
+  text-align: left;
+  color: #ffffff15;
+}
+
+.hiking-gear {
+  padding-top: 200px;
+  background-color: #0B1D26;
+}
+
+.hiking-gear .content {
+  display: flex;
+  width: 1462px;
+}
+
+.hiking-gear .left-content {
+  margin-right: 264px;
+}
+
+.hiking-gear .right-content {
+  margin-top: 124px;
+}
+
+.hiking-gear .background-number {
+  top: 25px;
+  right: 505px;
+  position: absolute;
+}
+
+.map-and-timing {
+  padding-top: 200px;
+  background-color: #0B1D26;
+  padding-bottom: 200px;
+}
+
+.map-and-timing .content {
+  display: flex;
+  width: 1462px;
+}
+
+.map-and-timing .left-content {
+  margin-top: 124px;
+}
+
+.map-and-timing .right-content {
+  margin-left: 264px;
+}
+
+footer {
+  background-color: #0B1D26;
+  padding-bottom: 120px;
+}
+
+footer .content {
+  display: flex;
+  width: 1462px;
+}
+
+footer .left-content {
+  margin-right: 543px;
+}
+
+footer .logo {
+  font-family: 'Chronicle Display';
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  cursor: pointer;
+  color: #fff;
+}
+
+footer .company {
+  font-family: "Gilroy-Light";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  margin-top: 122px;
+  color: #ffffff86;
+  white-space: nowrap;
+}
+
+footer .footer-title {
+  font-family: "Gilroy-Light";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: left;
+  color: var(--special-color);
+  margin-bottom: 24px;
+}
+
+footer .right-content {
+  display: flex;
+}
+
+footer .menu {
+  font-family: "Gilroy-Light";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;  
+  list-style: none;
+  padding: 0;
+  margin-right: 212px;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .menu li {
+  white-space: nowrap;
+  margin-bottom: 24px;
+}
+
+@media(width:1440px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --special-color: #FBD784;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .content {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .main-container .backgrounds {
+    background-image: url('images/hero-bg.avif');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1200px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .main-container .main-content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .main-container header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gilroy-Light';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.76px;
+    text-align: left;
+    width: 100%;
+    padding: 34px 20px 0 20px;
+    color: #fff;
+  }
+  
+  .main-container header .logo {
+    font-family: 'Chronicle Display';
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .main-container header .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background-mountains {
+    background-image: url('images/275a251d0966ae77b7e58d007b190a88.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1422px;
+    width: 100%;
+    position: absolute;
+    top: 464px;
+    z-index: 2;
+  }
+  
+  .background-hill {
+    background-image: url('images/hero-bg-2.avif');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 1132px;
+    width: 100%;
+    top: 768px;
+    z-index: 3;
+  }
+  
+  .main-container header .menu li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .main-container header .account {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .main-container header .account .avatar {
+    margin-right: 8px;
+  }
+  
+  .main-container .center-content {
+    padding-top: 175px;
+    display: flex;
+  }
+  
+  .main-container .center-content  .social-networks {
+    padding-top: 150px;
+    margin-top: 94px;
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+  }
+  
+  .main-container .center-content  .social-networks .text {
+    margin-right: 24px;
+    font-size: 18px;
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+    padding: 0;
+  }
+  
+  .main-container .center-content .social-networks .icon {
+    transform: rotate(270deg);
+    margin-right: 24px;
+  }
+  
+  .main-container .center-content .right-content {
+    padding-left: 120px;
+  }
+  
+  .main-container .title::before {
+    content: "";
+    position: absolute;
+    width: 72px;
+    height: 2px;
+    background-color: var(--special-color);
+    left: 0;
+    top: 10px;
+  }
+  
+  .main-container .title {
+    margin: 0;
+    position: relative;
+    padding-left: 104px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--special-color);
+  }
+  
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 72px;
+    height: 2px;
+    background-color: var(--special-color);
+    left: 0;
+    top: 10px;
+  }
+  
+  .title {
+    margin: 0;
+    position: relative;
+    padding-left: 104px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--special-color);
+  }
+  
+  .title2 {
+    font-family: 'Chronicle Display';
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.8px;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .main-container .title2 {
+    font-family: 'Chronicle Display';
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  
+  .main-container .scroll {
+    font-size: 18px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-container .scroll .text {
+    margin-right: 20px;
+    padding: 0;
+  }
+  
+  .slider-list {
+    font-family: "Gilroy-Bold";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    list-style: none;
+    position: fixed;
+    top: 326px;
+    right: 240px;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    z-index: 33;
+  }
+  
+  .slider-list .start {
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  
+  .slider-list .page {
+    padding: 20px 32px 20px 0px;
+    border-right: 3px solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    transition: border-color 0.4s ease-in-out;
+  }
+  
+  .start.page.page-active {
+    border-color: #fff;
+    transition: border-color 0.4s ease-in-out;
+  }
+  
+  .page.page-active {
+    border-color: #fff;
+    transition: border-color 0.4s ease-in-out;
+  }
+  
+  .slider-list .page .number-page {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .container-level-of-hiker {
+    padding-top: 200px;
+    padding-left: 114px;
+    background-color: #0B1D26;
+    width: 100%;
+  }
+  
+  .container-level-of-hiker .content {
+    display: flex;
+    width: 1462px;
+    z-index: 1;
+  }
+  
+  .text {
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-top: 27px;
+    color: #fff;
+  }
+  
+  .read-more {
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+  }
+  
+  .read-more .text {
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--special-color);
+    margin-right: 16px;
+    padding: 0;
+  }
+  
+  .container-level-of-hiker .left-content {
+    margin-top: 124px;
+  }
+  
+  .container-level-of-hiker .right-content {
+    margin-left: 84px;
+  }
+  
+  .container-level-of-hiker .background-number {
+    position: absolute;
+    top: 15px;
+    left: -152px;
+  }
+  
+  .background-number {
+    font-family: "Gilroy-Bold";
+    font-size: 240px;
+    font-weight: 700;
+    line-height: 240px;
+    text-align: left;
+    color: #ffffff15;
+  }
+  
+  .hiking-gear {
+    padding-top: 200px;
+    background-color: #0B1D26;
+  }
+  
+  .hiking-gear .content {
+    display: flex;
+    width: 1462px;
+  }
+  
+  .hiking-gear .left-content {
+    margin-right: 264px;
+  }
+  
+  .hiking-gear .right-content {
+    margin-top: 84px;
+  }
+  
+  .hiking-gear .background-number {
+    top: 25px;
+    right: 505px;
+    position: absolute;
+  }
+  
+  .map-and-timing {
+    padding-top: 200px;
+    background-color: #0B1D26;
+    padding-bottom: 200px;
+  }
+  
+  .map-and-timing .content {
+    display: flex;
+    width: 1462px;
+  }
+  
+  .map-and-timing .left-content {
+    margin-top: 124px;
+  }
+  
+  .map-and-timing .right-content {
+    margin-left: 84px;
+  }
+  
+  footer {
+    background-color: #0B1D26;
+    padding-bottom: 120px;
+  }
+  
+  footer .content {
+    display: flex;
+    width: 1462px;
+  }
+  
+  footer .left-content {
+    margin-right: 343px;
+  }
+  
+  footer .logo {
+    font-family: 'Chronicle Display';
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  footer .company {
+    font-family: "Gilroy-Light";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 122px;
+    color: #ffffff86;
+    white-space: nowrap;
+  }
+  
+  footer .footer-title {
+    font-family: "Gilroy-Light";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: left;
+    color: var(--special-color);
+    margin-bottom: 24px;
+  }
+  
+  footer .right-content {
+    display: flex;
+  }
+  
+  footer .menu {
+    font-family: "Gilroy-Light";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;  
+    list-style: none;
+    padding: 0;
+    margin-right: 212px;
+    color: #fff;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer .menu li {
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+  
+}
